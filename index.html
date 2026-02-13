@@ -1,198 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amphibians - Home</title>
     <link rel="icon" href="img/icon-frog-1.png">
+
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
+    <!-- BOOTSTRAP ICONS (para o ícone do GitHub) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Amphibians</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Amphibians</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CARROSSEL -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/pexels-pixabay-45863.jpg" alt="Sapo 1">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Mundo dos Anfíbios.</h1>
+                            <p>Descubra as espécies mais fascinantes da natureza.</p>
+                            <p><a class="btn btn-lg btn-success" href="#">Ver Galeria</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/sapo-tronco.jpg" alt="Sapo 2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Preservação Ambiental.</h1>
+                            <p>Saiba como ajudar a manter o habitat natural.</p>
+                            <p><a class="btn btn-lg btn-success" href="#">Saiba mais</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/pexels-lexo-salazar-188863-1370740.jpg" alt="Sapo 3">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Fotos Incríveis.</h1>
+                            <p>Confira nossa seleção de fotos da semana.</p>
+                            <p><a class="btn btn-lg btn-success" href="#">Abrir Álbum</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0"> <!--ms-auto faz os nav item irem mais para a direita da logo-->
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
-                </ul>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Cards redondinhos -->
+        <div class="container marketing">
+
+            <div class="row">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-4 mb-4 card-anfibio">
+                    <img src="img/sapo-1.jpg" alt="Sapo">
+
+                    <h2 class="fw-normal">Sapos</h2>
+
+                    <p>
+                        Os sapos são anfíbios mais terrestres, conhecidos pela pele rugosa e por viverem em locais úmidos.
+                    </p>
+
+
+                    <p><button class="btn-frog"><strong>Saiba Mais</strong></button></p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-4 mb-4 card-anfibio">
+                    <img src="img/sapo-vitoria-regia.jpg" alt="Rã">
+
+                    <h2 class="fw-normal">Rãs</h2>
+
+                    <p>
+                        As rãs vivem próximas à água e possuem pernas fortes, o que as torna excelentes saltadoras.
+                    </p>
+
+                    
+
+                    <p><button class="btn-frog"><strong>Saiba Mais</strong></button></p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-4 mb-4 card-anfibio">
+                    <img src="img/axolote.jpg" alt="Salamandra">
+
+                    <h2 class="fw-normal">Salamandras</h2>
+
+                    <p>
+                        Salamandras são anfíbios de corpo alongado, conhecidos pela capacidade de regeneração.
+                    </p>
+
+                  
+                    <p><button class="btn-frog"><strong>Saiba Mais</strong></button></p>
+                </div>
+
+                
+
             </div>
-        </div>
-    </nav>
-</header>
 
-<main>
+            <!-- CARDS SOBRE OS HABITAT DOS ANFIBIOS -->
+            <div class="card-anfibios">
+                <hr class="featurette-divider">
 
-    <!-- CARROSSEL -->
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-        </div>
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">
+                            A vida na lagoa. <span class="text-body-secondary">Surpreendente.</span>
+                        </h2>
+                        <p class="lead">
+                        A lagoa é um dos ambientes mais importantes para a vida dos anfíbios. Muitas espécies dependem da água para se reproduzir, porque seus ovos precisam ficar em locais úmidos para se desenvolverem. É na lagoa que os girinos nascem e começam a crescer, até passarem pela metamorfose e virarem adultos. 
+                        <br><br>
+                        Além disso, a lagoa funciona como um verdadeiro “berçário” da natureza. Ela abriga vários animais e plantas, e ajuda a manter o equilíbrio do ecossistema. Mesmo sendo um ambiente pequeno, uma lagoa pode ter uma biodiversidade enorme, com insetos, peixes, anfíbios e outros seres vivos convivendo no mesmo lugar.
 
-        <div class="carousel-inner">
+                        </p>
+                        <button class="btn-frog"><strong>Saiba Mais</strong></button>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto fade-in" src="img/sapo-vitoria-regia.jpg"
+                            alt="Anfíbio na lagoa">
+                    </div>
+                </div>
 
-            <div class="carousel-item active">
-                <img src="img/pexels-pixabay-45863.jpg" alt="Sapo 1">
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>Mundo dos Anfíbios.</h1>
-                        <p>Descubra as espécies mais fascinantes da natureza.</p>
-                        <p><a class="btn btn-lg btn-success" href="#">Ver Galeria</a></p>
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">
+                            Camuflagem perfeita. <span class="text-body-secondary">Veja você mesmo.</span>
+                        </h2>
+                        <p class="lead">
+                           A camuflagem é uma das formas mais importantes de defesa dos anfíbios. Muitos sapos, rãs e salamandras conseguem se misturar com o ambiente, ficando parecidos com folhas secas, troncos, pedras ou até com a lama. Isso faz com que eles sejam difíceis de enxergar, ajudando a escapar de predadores.
+                           <br><br>
+                           Essa estratégia é essencial porque anfíbios são animais pequenos e vulneráveis, e vivem em lugares onde existem muitos caçadores, como aves, cobras, lagartos e até alguns peixes. Quando conseguem se camuflar, eles têm mais chances de sobreviver.
+                        </p>
+                        <button class="btn-frog"><strong>Saiba Mais</strong></button>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto fade-in"
+                            src="img/pexels-lexo-salazar-188863-1370740.jpg" alt="Anfíbio camuflado">
                     </div>
                 </div>
             </div>
 
-            <div class="carousel-item">
-                <img src="img/sapo-tronco.jpg" alt="Sapo 2">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Preservação Ambiental.</h1>
-                        <p>Saiba como ajudar a manter o habitat natural.</p>
-                        <p><a class="btn btn-lg btn-success" href="#">Saiba mais</a></p>
+        </div>
+
+        <!-- SOBRE O PROJETO E AUTORA -->
+        <section class="container my-5">
+            <hr class="featurette-divider">
+
+            <div class="row align-items-center">
+
+                <!-- Texto -->
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">
+                        Sobre o projeto <span class="text-body-secondary">Amphibians</span>
+                    </h2>
+
+                    <p class="lead">
+                        O site Amphibians foi criado com o objetivo de divulgar informações sobre anfíbios,
+                        seus habitats, curiosidades e a importância da preservação ambiental.
+                    </p>
+
+                    <p class="lead">
+                        Esse projeto começou como um estudo pessoal de desenvolvimento web,
+                        utilizando HTML, CSS, JavaScript e Bootstrap.
+                    </p>
+                </div>
+
+                <!-- Foto -->
+                <div class="col-md-5 text-center">
+                    <img src="img/autora.jpg" alt="Foto da autora" class="img-fluid rounded-circle shadow"
+                        style="max-width: 230px;">
+
+                    <h5 class="mt-3 mb-1">Anna Júlia</h5>
+                    <small class="text-body-secondary d-block mb-3">Autora do projeto</small>
+
+                    <a href="https://github.com/julia-alt-0w0" target="_blank" class="btn btn-dark btn-sm">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="text-light custom-footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Sobre o site -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Amphibians</h5>
+                        <p>Descubra mais sobre anfíbios, seu habitat e curiosidades fascinantes.</p>
                     </div>
+
+                    <!-- Links rápidos -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Links úteis</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                            <li><a href="sobre.html" class="text-light text-decoration-none">Sobre</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Ajuda</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contato -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Contato</h5>
+                        <p>Email: contato@amphibionix.com</p>
+                    </div>
+
+                </div>
+
+                <hr class="bg-light">
+                <div class="d-flex justify-content-between">
+                    <p class="mb-0">&copy; 2026 Amphibians, Rio Branco - AC.</p>
+                    <a href="#" class="text-light text-decoration-none">Voltar ao topo ↑</a>
                 </div>
             </div>
+        </footer>
 
-            <div class="carousel-item">
-                <img src="img/pexels-lexo-salazar-188863-1370740.jpg" alt="Sapo 3">
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <h1>Fotos Incríveis.</h1>
-                        <p>Confira nossa seleção de fotos da semana.</p>
-                        <p><a class="btn btn-lg btn-success" href="#">Abrir Álbum</a></p>
-                    </div>
-                </div>
-            </div>
+    </main>
 
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-
-    <!-- Cards redondinhos -->
-    <div class="container marketing">
-
-        <div class="row" > <!-- g-4 adiciona espaçamento entre colunas e linhas -->
-
-            <div class="col-lg-4 mb-4 card-anfibio">
-                <img src="img/sapo-1.jpg" alt="Sapo">
-                <h2 class="fw-normal">Sapos</h2>
-                <p>Conheça as características dos sapos e onde encontrá-los.</p>
-                <p><button id="bottone1"><strong>Saiba Mais</strong></button> </p>
-            </div>
-
-            <div class="col-lg-4 card-anfibio" >
-                <img src="img/sapo-vitoria-regia.jpg" alt="Rã">
-                <h2 class="fw-normal">Rãs</h2>
-                <p>Diferenças principais entre sapos, rãs e pererecas aaaaaaa.</p>
-                <p><button id="bottone1"><strong>Saiba Mais</strong></button> </p>
-            </div>
-          
-            <div class="col-lg-4 card-anfibio">
-                <img src="img/axolote.jpg" alt="Salamandra">
-                <h2 class="fw-normal">Salamandras</h2>
-                <p>Curiosidades sobre a regeneração e habitat das salamandras.</p>
-                <p><button id="bottone1"><strong>Saiba Mais</strong></button></p>
-            </div>
-
-    
-
-
-        </div>
-
-        <!--CARDS SOBRE OS HABITAT DOS ANFIBIOS-->
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">A vida na lagoa. <span class="text-body-secondary">Surpreendente.</span></h2>
-                <p class="lead">Como anfíbios vivem em harmonia com o ambiente aquático papapa popopop popopoppaapapappapa.</p>
-                <!-- From Uiverse.io by TCdesign-dev --> 
-                <button id="bottone1"><strong>Saiba Mais</strong></button>   
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto fade-in" src="img/sapo-vitoria-regia.jpg">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">Camuflagem perfeita. <span class="text-body-secondary">Veja você mesmo.</span></h2>
-                <p class="lead">Muitos anfíbios usam camuflagem para fugir de predadores.</p>
-                <!-- From Uiverse.io by TCdesign-dev --> 
-                <button id="bottone1"><strong>Saiba Mais</strong></button> 
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img class="featurette-image img-fluid mx-auto fade-in" src="img/pexels-lexo-salazar-188863-1370740.jpg">
-            </div>
-        </div>
-
-        
-
-    </div>
-
- <footer class= "text-light custom-footer">
-    <div class="container">
-        <div class="row">
-
-            <!-- Sobre o site -->
-            <div class="col-md-4 mb-3">
-                <h5>Amphibians</h5>
-                <p>Descubra mais sobre anfíbios, seu habitat e curiosidades fascinantes.</p>
-            </div>
-
-            <!-- Links rápidos -->
-            <div class="col-md-4 mb-3">
-                <h5>Links úteis</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="sobre.html" class="text-light text-decoration-none">Sobre</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Ajuda</a></li>
-                </ul>
-            </div>
-
-            <!-- Contato -->
-            <div class="col-md-4 mb-3">
-                <h5>Contato</h5>
-                <p>Email: contato@amphibionix.com</p>
-                <p>Telefone: +55 99 99999-9999</p>
-            </div>
-
-        </div>
-
-        <hr class="bg-light">
-        <div class="d-flex justify-content-between">
-            <p class="mb-0">&copy; 2025 Amphibians, Rio Branco - AC.</p>
-            <a href="#" class="text-light text-decoration-none">Voltar ao topo ↑</a>
-        </div>
-    </div>
-</footer>
-
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="script.js"></script>
 </body>
+
 </html>

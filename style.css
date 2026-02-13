@@ -41,9 +41,9 @@ main {
 
 /* MARKETING */
 .marketing .col-lg-4 {
+    background-color: rgba(172, 184, 180, 0.363);
     margin-bottom: 1.5rem;
     text-align: center;
-    border-radius: 20px;
     padding: 20px;
     transition: all 0.4s ease;
     cursor: pointer;
@@ -69,6 +69,8 @@ main {
     margin-bottom: 15px;
 }
 
+
+
 /* FEATURETTES */
 .featurette-divider {
     margin: 5rem 0;
@@ -88,30 +90,32 @@ main {
     background-color: rgb(84, 99, 81);
 }
 
-/* From Uiverse.io by TCdesign-dev */ 
-#bottone1 {
- color: aliceblue; /*cor da fonte*/
- padding-left: 33px;
- padding-right: 33px;
- padding-bottom: 16px;
- padding-top: 16px;
- border-radius: 9px;
- background: #6b8672;
- border: none;
- font-family: inherit;
- text-align: center;
- cursor: pointer;
- transition: 0.4s;
+
+.btn-frog {
+  padding: 1.1em 2.5em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #000;
+  background-color: #508f5e9f;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
 }
 
-#bottone1:hover {
- box-shadow: 7px 5px 56px 7px #abbda4;
- background-color: #495f4f;
+.btn-frog:hover {
+  background-color: #2175549f;
+  box-shadow: 0px 15px 20px rgba(27, 43, 36, 0.4);
+  color: #fff;
+  transform: translateY(-5px);
 }
 
-#bottone1:active {
- transform: scale(0.97);
- box-shadow: 7px 5px 56px -10px #13db56;
+.btn-frog:active {
+  transform: translateY(-2px);
 }
 
 
@@ -127,5 +131,24 @@ main {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.hero {
+  background-color: #3f5f3f;
+  height: 300px;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+}
+
+
+
+
+
 
 
